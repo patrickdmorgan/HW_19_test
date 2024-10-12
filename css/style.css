@@ -1,0 +1,172 @@
+/* Navbar styles */  
+nav {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+}  
+
+nav ul {  
+    display: flex;  
+    list-style: none;  
+    padding: 0;  
+}  
+
+nav ul li {  
+    margin: 0 15px; /* Space between navbar items */  
+    padding: 0 30px;   
+}  
+
+nav ul li a {  
+    color: white; /* Set the text color to white */  
+    text-decoration: none; /* Remove underline from links */  
+}  
+
+nav ul li a:hover {  
+    transition-duration: 0.4s;  
+    border: 1px solid #80bbff; /* Change border color on hover */  
+    border-radius: 8px; /* Rounded corners */  
+    cursor: pointer; /* Pointer cursor on hover */  
+}  
+/* Hero image setup */  
+.heroImg {  
+    height: auto;  
+    width: auto;  
+    padding: 25px;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+}  
+
+/* Content box styles */  
+.content {  
+    font-family: Arial, Helvetica, sans-serif;  
+    width: 500px;  
+    text-align: center; /* Center the text */  
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */  
+    padding: 20px;  
+    border-radius: 10px; /* Rounded corners */  
+}  
+
+/* Profile image */  
+.profile-img {  
+    max-width: 40%; /* Responsive profile image */  
+    height: auto;  
+    border-radius: 50%; /* Circular profile image */  
+}  
+
+/* Button styles */  
+button {  
+    background-color: #80bbff; /* Button color */  
+    color: white; /* Button text color */  
+    border: none;  
+    padding: 10px 20px;  
+    font-size: 16px;  
+    cursor: pointer; /* Pointer cursor on hover */  
+    border-radius: 5px; /* Rounded corners for button */  
+}  
+
+button:hover {  
+    background-color: #1c4ff7; /* Darker button color on hover */  
+    transition-duration: 0.2s; /* Transition effect */  
+}  
+
+/* Headings styles */  
+h1 {  
+    text-align: center;  
+    margin-bottom: 20px; /* Space below headings */  
+}  
+
+h4 {  
+    margin: 10px 0; /* Space above/below project titles */  
+}  
+
+/* Skills grid */  
+.skillsGrid {  
+    text-align: center;  
+    display: grid; /* Grid layout */  
+    grid-template-columns: auto auto auto; /* 3 columns */  
+    gap: 20px; /* Space between grid items */  
+    margin-top: 20px; /* Space above grid */  
+    margin-left: 23%;  
+    margin-right: 23%;  
+    margin-bottom: 30px;  
+    padding: 10px;  
+}  
+
+/* Skills items */  
+.skillsItem {  
+    background-color: white; /* Background for project items */  
+    border-radius: 8px; /* Rounded corners */  
+    padding: 15px; /* Inner padding */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
+}  
+
+.skillsItem img {  
+    max-width: 100%; /* Responsive image */  
+    border-radius: 8px; /* Rounded corners for images */  
+}  
+
+/* Work grid */  
+.workGrid {  
+    text-align: center;  
+    display: grid; /* Grid layout */  
+    gap: 20px; /* Space between grid items */  
+    margin-top: 20px; /* Space above grid */  
+    margin-left: 23%;  
+    margin-right: 23%;  
+    margin-bottom: 30px;  
+    padding: 10px;  
+}  
+
+/* Work items */  
+.workItem {  
+    background-color: white; /* Background for project items */  
+    border-radius: 8px; /* Rounded corners */  
+    padding: 15px; /* Inner padding */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
+}  
+
+.workItem img {  
+    max-width: 100%; /* Responsive images */  
+    border-radius: 8px; /* Rounded corners for images */  
+    margin-left: 10px; /* Margin for images */  
+}  
+
+/* Footer styles */  
+footer {  
+    background-color: #000000; /* Dark footer background */  
+    color: white; /* Footer text color */  
+    text-align: center; /* Center text */  
+    padding: 10px 0; /* Padding */  
+}  
+
+footer ul {  
+    display: flex; /* Horizontal layout for items */  
+    justify-content: center; /* Center items */  
+    list-style: none; /* No bullet points */  
+}  
+
+footer ul li {  
+    margin: 0 15px; /* Space between footer items */  
+}  
+
+footer ul li a {  
+    color: white; /* Link color */  
+    text-decoration: none; /* Remove underline */  
+}  
+
+footer ul li a:hover {  
+    text-decoration: underline; /* Underline on hover */  
+}  
+
+/* Media query for small screens */  
+@media screen and (max-width: 600px) {  
+    div.example {  
+        display: none; /* Hide elements with class 'example' on small screens */  
+    }  
+    .skillsGrid,  
+    .workGrid {  
+        margin-left: 5%; /* Adjust margins for smaller screens */  
+        margin-right: 5%;  
+    }  
+}  
