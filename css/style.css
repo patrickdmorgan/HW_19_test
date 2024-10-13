@@ -1,32 +1,55 @@
+/* Apply a background image to the body */  
+body, html {  
+    height: 100%; /* Full height */
+    box-sizing: border-box; 
+}  
+
+.logo {  
+    width: 32%;
+    height: 30%;  
+    padding: 1%;   
+}  
+
+.logo-img {  
+    max-width: 50%; /* Ensure logo is responsive */  
+    height: auto; 
+}  
 /* Navbar styles */  
 nav {  
-    display: flex;  
+    position: sticky; /* Sticky navbar */  
+    top: 0; /* Stick to the top of viewport */  
+    z-index: 1000; /* Stay above other content */  
+    display: flex;   
     align-items: center;  
-    justify-content: center;  
+    justify-content: center;   
+    background-color: rgb(0, 0, 0); /* Semi-transparent background */  
+    padding: 25px 0; /* Padding for navbar */  
 }  
 
 nav ul {  
-    display: flex;  
-    list-style: none;  
-    padding: 0;  
+    display: flex;   
+    list-style: none; /* Remove bullet points */  
+    padding: 0; /* No padding */  
+    margin: 0; /* No margin */  
 }  
 
 nav ul li {  
-    margin: 0 15px; /* Space between navbar items */  
-    padding: 0 30px;   
+    margin: 0 15px;   
 }  
 
 nav ul li a {  
-    color: white; /* Set the text color to white */  
-    text-decoration: none; /* Remove underline from links */  
+    color: white; /* Text color */  
+    text-decoration: none; /* No underline */  
 }  
 
 nav ul li a:hover {  
-    transition-duration: 0.4s;  
-    border: 1px solid #80bbff; /* Change border color on hover */  
+    transition-duration: 0.4s;   
+    border: 1px solid #80bbff; /* Highlight border on hover */  
     border-radius: 8px; /* Rounded corners */  
-    cursor: pointer; /* Pointer cursor on hover */  
+    padding: 5px 10px; /* Padding for hover effect */  
+    cursor: pointer; /* Change cursor to pointer */  
 }  
+
 /* Hero image setup */  
 .heroImg {  
     height: auto;  
@@ -42,7 +65,7 @@ nav ul li a:hover {
     font-family: Arial, Helvetica, sans-serif;  
     width: 500px;  
     text-align: center; /* Center the text */  
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */  
+    background-color: ; /* Slightly transparent background */  
     padding: 20px;  
     border-radius: 10px; /* Rounded corners */  
 }  
@@ -51,7 +74,7 @@ nav ul li a:hover {
 .profile-img {  
     max-width: 40%; /* Responsive profile image */  
     height: auto;  
-    border-radius: 50%; /* Circular profile image */  
+    border-radius: 100%; /* Circular profile image */  
 }  
 
 /* Button styles */  
@@ -74,6 +97,7 @@ button:hover {
 h1 {  
     text-align: center;  
     margin-bottom: 20px; /* Space below headings */  
+    color: aliceblue;
 }  
 
 h4 {  
@@ -95,10 +119,10 @@ h4 {
 
 /* Skills items */  
 .skillsItem {  
-    background-color: white; /* Background for project items */  
+    background-color: rgb(186, 230, 251); /* Background for project items */  
     border-radius: 8px; /* Rounded corners */  
     padding: 15px; /* Inner padding */  
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
+    box-shadow: 0 2px 5px rgb(201, 240, 255); /* Subtle shadow */  
 }  
 
 .skillsItem img {  
@@ -120,10 +144,10 @@ h4 {
 
 /* Work items */  
 .workItem {  
-    background-color: white; /* Background for project items */  
+    background-color: rgb(186, 230, 251); /* Background for project items */  
     border-radius: 8px; /* Rounded corners */  
     padding: 15px; /* Inner padding */  
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
+    box-shadow: 0 2px 5px rgb(201, 240, 255); /* Subtle shadow */  
 }  
 
 .workItem img {  
@@ -170,3 +194,16 @@ footer ul li a:hover {
         margin-right: 5%;  
     }  
 }  
+
+body {  
+    background-image: url('images/background.png'); /* Replace with the path to your image */  
+    background-size: cover; /* Make the background image cover the entire viewport */  
+    background-position: center; /* Center the background image */  
+    background-repeat: no-repeat; /* Prevent the background from repeating */  
+}  
+
+@media screen and (max-width: 600px) {
+    div.example {
+      display: none;
+    }
+  }
