@@ -11,19 +11,22 @@ body, html {
 }  
 
 .logo-img {  
-    max-width: 50%; /* Ensure logo is responsive */  
+    max-width: 30%; /* Ensure logo is responsive */  
     height: auto; 
+    padding-top: 25px;
+    padding-right:35%;
+    padding-left: 35%;
 }  
 /* Navbar styles */  
 nav {  
-    position: sticky; /* Sticky navbar */  
-    top: 0; /* Stick to the top of viewport */  
+    top: 0; /* Stick to the top of viewport */
     z-index: 1000; /* Stay above other content */  
     display: flex;   
     align-items: center;  
     justify-content: center;   
-    background-color: rgb(0, 0, 0); /* Semi-transparent background */  
+    background-color: none;
     padding: 25px 0; /* Padding for navbar */  
+    position: sticky; /* Sticky navbar */  
 }  
 
 nav ul {  
@@ -39,7 +42,11 @@ nav ul li {
 
 nav ul li a {  
     color: white; /* Text color */  
+    border-radius: 1px;
+    background-color: #000000;
     text-decoration: none; /* No underline */  
+    border-radius: 8px; /* Rounded corners */  
+    padding: 5px 10px; /* Padding for hover effect */ 
 }  
 
 nav ul li a:hover {  
@@ -57,25 +64,35 @@ nav ul li a:hover {
     padding: 25px;  
     display: flex;  
     align-items: center;  
-    justify-content: center;  
-}  
+    justify-content: center; 
+}
 
 /* Content box styles */  
 .content {  
-    font-family: Arial, Helvetica, sans-serif;  
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
     width: 500px;  
     text-align: center; /* Center the text */  
-    background-color: ; /* Slightly transparent background */  
+    background-color: #80bbff; /* Slightly transparent background */  
     padding: 20px;  
     border-radius: 10px; /* Rounded corners */  
 }  
+
+h2 {
+    font-size: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+
+}
 
 /* Profile image */  
 .profile-img {  
     max-width: 40%; /* Responsive profile image */  
     height: auto;  
     border-radius: 100%; /* Circular profile image */  
-}  
+} 
 
 /* Button styles */  
 button {  
