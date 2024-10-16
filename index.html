@@ -2,11 +2,35 @@
 <html lang="en">  
 <head>  
     <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+    <!-- Your content goes here -->  
+</body>  
+</html>   
     <title>My Portfolio</title>   
     <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS -->  
 </head>  
 <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<nav class="inline-block"> 
+    <div class="logo">
+        <class id="logo-img">
+            <img src="images/logo.png" alt="Logo" class="logo-img">   
+        </class>
+    </div>
+        <class id="#navButton">  
+            <ul>  
+                <li><a href="#aboutMe">About Me</a></li>  
+                <li><a href="#mySkills">Skills</a></li>  
+                <li><a href="#myWork">Work</a></li>  
+                <li><a href="#contact">Contact</a></li>  
+            </ul>  
+</nav>
     <style>
         body {
           background-image: url('images/backgroundimage.png');
@@ -14,31 +38,19 @@
           background-attachment: fixed;
         }
     </style> 
-    <div class="logo-img">
-        <img src="images/logo.png" alt="Logo" class="logo-img">   
-
-    </div>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-        <nav class="inline-block"> 
-        <class id="#navButton">  
-            <ul>  
-                <li class="inline-block"><a href="#aboutMe">About Me</a></li>  
-                <li class="inline-block"><a href="#mySkills">Skills</a></li>  
-                <li class="inline-block"><a href="#myWork">Work</a></li>  
-                <li class="inline-block"><a href="#contact">Contact</a></li>  
-            </ul>  
-        </nav>
 
     <!--  About Me section coded using CSS flex -->
-    <section id="aboutMe"> <!-- jQuery "section id" used to  -->
+    <section id="aboutMe"> <!-- jQuery "section id"  -->
         <div class="aboutMe">   
             <section class="heroImg">  
                 <div class="content">  
-                    <img src="images/selfie 2024 1.png" alt="Profile Picture" class="profile-img"> 
-                    <p>Hello. I'm Patrick, a junior designer who's passionate about making</p><br>
-                        <p1>beautiful UI's</p1><br><br><br>
-                    <button>Download Resume</button>  
+                    <img src="images/MyImage.png" alt="Profile Picture" class="profile-img"> 
+                    <div>
+                        <p>Hello, <span id="imPatrick">I'm Patrick.</span></p>
+                            <p>A junior designer who's passionate about making</p><br>
+                            <p><span id="beautifulUI">beautiful UI's</div></p><br><br>
+                            <div id="resumeButton">View Resume</div>
+                    </div>
                 </div>  
             </section>
         </div> 
