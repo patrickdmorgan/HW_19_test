@@ -62,15 +62,14 @@ nav ul li a {
 
 nav ul li a:hover {  
     display: flex;
-    color: white; /* Text color */  
+    color: #3ffde7;   /* Text color */  
     background-color: #000000;
     text-decoration: none; /* No underline */ 
     transition-duration: 0.4s;   
-    border: 1px solid #80bbff; /* Highlight border on hover */
     box-shadow:     
-        0 0 10px #00cc99, /* inner glow */  
-        0 0 15px #00cc99,   
-        0 0 20px #00cc99;   
+        0 0 5px #1c4ff7,
+        0 0 15px #3ffde7,  
+        0 0 20px #3ffde7;  
     border-radius: 8px; /* Rounded corners */  
     padding: 5px 10px; /* Padding for hover effect */  
     margin: 0; /* No margin */   
@@ -95,7 +94,7 @@ nav ul li a:hover {
     width: 500px;  
     text-align: center; /* Center the text */  
     background-color: #1c4ff7; /* For browsers that do not support gradients */
-    background-image: linear-gradient(180deg, #1c4ff7, rgb(63, 253, 231));  
+    background-image: linear-gradient(180deg, #1c4ff7, #3ffde7);  
     padding: 20px;  
     border-radius: 10px; /* Rounded corners */  
 }  
@@ -116,8 +115,7 @@ nav ul li a:hover {
     transition: text-shadow 0.3s ease; /* Smooth transition for effects */  
     background-color: black; /* button background */  
     border: none;  
-    border-radius: 5px;  
-    cursor: pointer;  
+    border-radius: 5px;    
     position: relative;  
     overflow: hidden; /* ensures the glowing effect doesn't overflow the button */  
     transition: all 0.3s ease;  
@@ -128,21 +126,21 @@ nav ul li a:hover {
     color: white; /* Button text color */  
     border: none;  
     padding: 10px 20px;  
-    font-size: 16px;  
-    cursor: pointer; /* Pointer cursor on hover */  
+    font-size: 16px;   
     border-radius: 20px; /* Rounded corners for button */  
 }  
 
 #resumeButton:hover {  
     background-color: #80bbff; /* Darker button color on hover */  
     transition-duration: 0.2s; /* Transition effect */  
+    cursor: pointer; 
 }  
 
 /* Profile image */  
 .profile-img {  
     max-width: 40%; /* Responsive profile image */  
     height: auto;  
-    border-radius: 100%; /* Circular profile image */  
+    border-radius: 100%; /* Circular profile image */ 
 } 
 
 /* Button styles */  
@@ -195,7 +193,6 @@ h4 {
     background-color: rgb(186, 230, 251); /* Background for project items */  
     border-radius: 8px; /* Rounded corners */  
     padding: 15px; /* Inner padding */  
-    box-shadow: 0 2px 5px rgb(201, 240, 255); /* Subtle shadow */  
 }  
 
 .skillsItem img {  
@@ -220,7 +217,6 @@ h4 {
     background-color: rgb(186, 230, 251); /* Background for project items */  
     border-radius: 8px; /* Rounded corners */  
     padding: 15px; /* Inner padding */  
-    box-shadow: 0 2px 5px rgb(201, 240, 255); /* Subtle shadow */  
 }  
 
 .workItem img {  
